@@ -6,6 +6,8 @@ import android.graphics.Color.RED
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.webunihw002.data.AppDatabase
 import com.example.webunihw002.data.InOut
@@ -21,7 +23,6 @@ import com.github.mikephil.charting.utils.ColorTemplate
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -89,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
         //setup value format
 
-        //Setup Piechart Entries Colers
+        //Setup Piechart Entries Colors
         val pieDataSet = PieDataSet(pieEntries, "Insiders")
         pieDataSet.valueTextSize = 20f
         pieDataSet.valueTextColor = R.color.black

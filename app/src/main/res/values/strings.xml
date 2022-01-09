@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WebuniHW002</string>
+    <string name="app_name">WebuniHW002_IncomeExpense</string>
 
     <string-array name="tab_names">
         <item>Bevétel</item>
