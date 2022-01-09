@@ -1,4 +1,4 @@
-package hu.bme.aut.viewpagertwodemo
+package com.example.webunihw002
 
 import android.content.Intent
 import android.os.Bundle
@@ -26,10 +26,6 @@ class FragmentPageOne : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
-        //bevétel hozzáadása
-
         _binding?.buttonIn?.setOnClickListener{
 
             val sumOfIn = InOut(null, _binding!!.edittextIn.text.toString().toInt(),0)
@@ -40,8 +36,6 @@ class FragmentPageOne : Fragment() {
 
             val intent =  Intent(requireContext(), MainActivity::class.java)
             startActivity(intent)
-
-         Log.e("gomb", "nyomva")
         }
     }
 

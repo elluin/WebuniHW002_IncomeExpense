@@ -1,4 +1,4 @@
-package hu.bme.aut.viewpagertwodemo
+package com.example.webunihw002
 
 import android.content.Intent
 import android.os.Bundle
